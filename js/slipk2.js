@@ -1,9 +1,9 @@
 function loadFonts() {
     const fonts = [
-        new FontFace('SFThonburiLight', 'url(../assets/fonts/SFThonburi.woff)'),
-        new FontFace('SFThonburiRegular', 'url(../assets/fonts/SFThonburi-Regular.woff)'),
-        new FontFace('SFThonburiSemiBold', 'url(../assets/fonts/SFThonburi-Semibold.woff)'),
-        new FontFace('SFThonburiBold', 'url(../assets/fonts/SFThonburi-Bold.woff)'),
+        new FontFace('SFThonburiLight', 'url(assets/fonts/SFThonburi.woff)'),
+        new FontFace('SFThonburiRegular', 'url(assets/fonts/SFThonburi-Regular.woff)'),
+        new FontFace('SFThonburiSemiBold', 'url(assets/fonts/SFThonburi-Semibold.woff)'),
+        new FontFace('SFThonburiBold', 'url(assets/fonts/SFThonburi-Bold.woff)'),
     ];
 
     return Promise.all(fonts.map(font => font.load())).then(function(loadedFonts) {
